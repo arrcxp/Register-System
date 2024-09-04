@@ -1,0 +1,81 @@
+.login__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--hard__blue);
+}
+
+.login__container > .form__login{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__login{
+    width: 455px;
+    height: auto;
+    padding: 64px 14px;
+    background: var(--soft__white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: var(--soft__white) 0 5px 10px;
+    transition: all .3s ease-in-out;
+}
+
+.form__login:hover{ box-shadow: var(--soft__white) 0 5px 15px; }
+.form__login > h1{ 
+    color: var(--hard__blue);
+    font-size: 48px;
+}
+
+.form__input__login{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input__login > input{
+    width: 350px;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin: 8px;
+    background: var(--hard__white);
+    color: var(--hard__blue);
+    font-weight: 500;
+}
+
+.btn__login{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 48px;
+}
+
+.btn__login > a{
+    color: var(--hard__blue);
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    font-weight: 500;
+    font-size: 12px;
+}
+.btn__login > a:hover{ color: var(--soft__blue); }
+
+.btn__login > button{
+    cursor: pointer;
+    width: 100px;
+    background: var(--hard__blue);
+    color: var(--soft__white);
+    font-weight: 500;
+    border: none;
+    padding: 8px 0;
+    transition: all .5s ease-in-out;
+}
+.btn__login > button:hover{ 
+    background: var(--soft__blue);
+    box-shadow: var(--soft__blue) 0 2px 10px; 
+}
